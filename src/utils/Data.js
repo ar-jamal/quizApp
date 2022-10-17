@@ -18,10 +18,10 @@ const Data = [
             C: "First In First Out",
             D: "Few In First Out"
         },
-        correct: "A"
+        correct: "C"
     },
     {
-        Q: "Q-03: Int hold decemals numbers",
+        Q: "Q-03: Int hold decimal numbers",
         Opt: {
             A: "True",
             B: "False",
@@ -40,12 +40,12 @@ const Data = [
     {
         Q: "Q-05: What does this eqation mean ? a != t",
         Opt: {
-            A: "A is assigned t",
-            B: "A and t are equl",
-            C: "A is not eqal to t",
-            D: "T is add to a",
+            A: "a is assigned t",
+            B: "a and t are equal",
+            C: "a is not equal to t",
+            D: "t is add to a",
         },
-        correct: "B"
+        correct: "C"
     },
     {
         Q: "Q-06: What commmand do you use to output data to the screen",
@@ -63,7 +63,7 @@ const Data = [
             A: "True",
             B: "False",
         },
-        correct: "A"
+        correct: "B"
     },
     {
         Q: "Q-08: A Syntax Error is ?",
@@ -101,7 +101,7 @@ const Data = [
             A: "True",
             B: "False",
         },
-        correct: "A"
+        correct: "B"
     },
     {
         Q: "Q12: What is the only thing a computer can understand",

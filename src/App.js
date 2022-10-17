@@ -26,11 +26,10 @@ function App() {
   }
 
   function options() {
-
     const options = question.Opt ?? {}
     const selected = question.selected
     return Object.keys(options).map((option, i) => {
-      return (<div className='Quiz-div'
+      return (<div className='Option-div'
         key={i}
         onClick={checkAns.bind(this, option)}
       >
@@ -53,17 +52,18 @@ function App() {
         </header>
         {/* console.log(quizes) */}
         <div className='Body'>
-          <p className='title'>{question.Q}</p>
-          {
-            !submited &&
-            <div className='Quiz-div-main'>{options()}</div>
-          }
-          <div className='Score-div'>
+          <div className='Quiz-div-main'>
+            <p className='title'>{question.Q}</p>
             {
-              submited &&
-              <h1 style={{ color: 'black' }}>{"Your Score is:" + score}</h1>
+              !submited &&
+              <div className='Options-div-main'>{options()}</div>
             }
-
+            <div className='Score-div'>
+              {
+                submited &&
+                <h1 style={{ color: 'black' }}>{"Your Score is:" + score}</h1>
+              }
+            </div>
           </div>
           {
             !submited &&
@@ -77,7 +77,6 @@ function App() {
               <button className='app-btn' onClick={() => setInd(i => submited ? i : i + 1)}>| {last ? "Submit" : "Next"}</button>
             </div>
           }
-
         </div>
       </div>
     </div>
